@@ -140,4 +140,4 @@ getgenv().Naz = {
     },
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/33c5b2752a7a43d43c4359fbe48717f6.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gugnon/velocity/main/cc"))()
