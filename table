@@ -1,0 +1,143 @@
+getgenv().Naz = {
+    ["Bullet Redirection"] = {
+        ["Enabled"] = true,
+        ["Mode"] = "FOV", -- // fov or target
+        ["Target Key"] = "Q",
+        ["Notify"] = true, 
+        ["Prediction"] = 0.133,
+        ["Hit Chance"] = 100, 
+        ["Target Part"] = "Head",
+        ["Target Part Offset"] = 0,
+        ["Nearest Part To Cursor"] = false, 
+        ["Closest Point"] = false, 
+        ["Anti Ground Shots"] = false,
+    },
+    ["Aim Assist"] = {
+        ["Enabled"] = true, 
+        ["Mode"] = "Target_toggle", -- // (FOV, Target_toggle, Target_hold)
+        ["Target Key"] = "C", 
+        ["Notify"] = true, 
+        ["Prediction"] = 0.133,
+        ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
+        ["Target Part Offset"] = 0, 
+        ["Nearest Part To Cursor"] = false,  
+        ["Closest Point"] = false, 
+        ["Line"] = false,
+        ["Smoothness"] = {
+            ["Enable"] = true,
+            ["Value"] = 1.447, 
+        },
+        ["Shake"] = {
+            ["Enabled"] = false,
+            ["X"] = 5, -- // 1-5
+            ["Y"] = 5, -- // 1-5
+            ["Z"] = 5, -- // 1-5\
+        }
+    },
+    ['Flags'] ={
+        ["Unlock On KO"] = false, 
+        ["Unlock Outside FOV"] = false, 
+        ["Unlock Behind Wall"] = false, 
+    },
+    ["Latency"] = {
+        ["Auto Prediction"] = {
+            ["Enabled"] = true, 
+            ["Type"] = "regular", -- // regular, beta, v2, Auto(Auto is broken)
+            ["AutoPred"] = { 
+                ["Ping20"]  = 0.12746444,
+                ["Ping30"]  = 0.12746444,
+                ["Ping40"]  = 0.12746444,
+                ["Ping50"]  = 0.11243,
+                ["Ping60"]  = 0.11243,
+                ["Ping70"]  = 0.12533,
+                ["Ping80"]  = 0.169,
+                ["Ping90"]  = 0.13626,
+                ["Ping100"] = 0.13829,
+                ["Ping110"] = 0.146,
+                ["Ping120"] = 0.149,
+                ["Ping130"] = 0.151,
+                ["Ping140"] = 0.1652131,
+                ["Ping150"] = 0.125333,
+                ["Ping160"] = 0.1223333,
+                ["Ping170"] = 0.15,
+                ["Ping180"] = 0.1923111,
+                ["Ping190"] = 0.165771,
+                ["Ping200"] = 0.1746,
+            }
+        },
+    },
+    ["Checks"] = {
+        ["Visible Check"] = true, 
+        ["K.O Check"] = true, 
+        ["Crew Check"] = false, 
+        ["Friend Check"] = false,  
+        ["Distance"] = { 
+            ["Enabled"] = false,
+            ["Max Distance"] = 200, 
+        }
+    },
+    ["Resolver"] = {
+        ["Enabled"] = true, 
+        ["Method"] = "Delta", 
+        ["Keybind Enabled"] = false, 
+        ["Keybind"] = "T", 
+    },
+    ["FOV"] = { 
+        ["Bullet Redirection"] = {
+            ["Visible"] = false, 
+            ["Filled"] = false, 
+            ["Size"] = 200,
+            ["Thickness"] = 1, 
+            ["Transparency"] = 1, 
+            ["Color"] = Color3.fromRGB(255,255,255) 
+        },
+        ["Aim Assist"] = {
+            ["Visible"] = false, 
+            ["Filled"] = false,
+            ["Size"] = 200, 
+            ["Thickness"] = 1, 
+            ["Transparency"] = 1, 
+            ["Color"] = Color3.fromRGB(255,255,255) 
+        },
+    },
+    ["Blink FOV"] = {
+        ["Enabled"] = true,
+        ["Blink Key"] = Enum.KeyCode.F,
+        ["Blink Speed"] = 1.5,
+        ["ScaleFactor"] = 1, -- Adjust this to change the size
+        ["BoxPosition"] = Vector3.new(0, 1, 0), -- Change the position here
+    },
+    ["Airshot"] = {
+        ["Enabled"] = true, 
+        ["Jump Offset"] = -1.6, 
+        ["Aim Assist Smoothness"] = {
+            ["Enabled"] = true,
+            ["New Smoothness"] = 0.58, 
+        }
+    },
+    ["Crosshair"] = {
+        ["Size"] = 2, -- The width of each line
+        ["Length"] = 20, -- The length of each line
+        ["Gap"] = 40, -- The gap between the mouse cursor and the inner end of each line
+        ["RainbowEnabled"] = false,
+        ["RainbowSpeed"] = 1, -- Speed of the rainbow effect
+        ["SpinSpeed"] = 90 -- Degrees per second
+    },
+    ["Options"] = {
+        ["Intro"] = true, 
+        ["Allow Notifications"] = false, 
+        ["Notifcation Type"] = "xaxa", -- // Akali, Roblox, xaxa
+        ["Notifcation Duration"] = 3, 
+        ["Disable Seats"] = true,   
+        ["Low Graphics"] = false, 
+        ["Mute Boomboxes"] = false,  
+        ["Textures"] = true,
+        
+    },
+    ["CFrame"] = {
+        ["Enabled"] = true,
+        ["Toggle"] = "V",
+    },
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/33c5b2752a7a43d43c4359fbe48717f6.lua"))()
